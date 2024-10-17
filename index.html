@@ -37,6 +37,9 @@
   <script>
     // Get the img object using its Id
     img = document.getElementById("img1");
+    $('img').each(function(index, element) {
+      console.log('índice elemento '+index+' '+$(element).text()); 
+      });
     /*img = document.querySelector('#${id}');*/
     // Function to increase image size
     function enlargeImg() {
