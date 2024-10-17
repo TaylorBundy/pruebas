@@ -1,0 +1,31 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../Python/Projectos"
+		},
+		{
+			"path": "E:/HERRAMIENTAS/MANUALES/Python/Web Scrapping/web-scraping-master/NIVEL 1"
+		},
+		{
+			"path": "E:/HERRAMIENTAS/MANUALES/Python/Web Scrapping/web-scraping-master/NIVEL 2"
+		},
+		{
+			"path": "E:/HERRAMIENTAS/MANUALES/Python/Web Scrapping/web-scraping-master/NIVEL 3"
+		},
+		{
+			"path": "E:/HERRAMIENTAS/MANUALES/Python/Web Scrapping/web-scraping-master/NIVEL 4"
+		},
+		{
+			"path": "E:/HERRAMIENTAS/MANUALES/Python/Web Scrapping/web-scraping-master/NIVEL 5"
+		},
+		{
+			"path": "E:/HERRAMIENTAS/MANUALES/Python/Web Scrapping/web-scraping-master/NIVEL EXTRA"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "htdocs"
+	}
+}

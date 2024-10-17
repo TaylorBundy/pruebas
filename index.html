@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="windows-1252">
+  <title>HTML</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <div class="swiper MySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="Imagenes/1.jpg" onclick="enlargeImg()" id="img1">                
+      </div>
+      <div class="swiper-slide">
+        <img src="Imagenes/2.jpg" onclick="enlargeImg()" id="img2">      
+      </div>
+      <div class="swiper-slide">
+        <img src="Imagenes/3.jpg" onclick="enlargeImg()" id="img3">       
+      </div>      
+      <div class="swiper-slide">
+        <img src="Imagenes/4.jpg" onclick="enlargeImg()" id="img4">
+      </div>
+      <div class="swiper-slide">
+        <img src="Imagenes/5.jpg" onclick="enlargeImg()" id="img5">
+      </div>
+    </div>
+  </div>
+
+  <button class="prev">Prev</button>
+  <button class="next">Next</button>
+  <button onclick="resetImg()">Reset</button>
+
+  <script>
+    // Get the img object using its Id
+    img = document.getElementById("img1");
+    /*img = document.querySelector('#${id}');*/
+    // Function to increase image size
+    function enlargeImg() {
+      // Set image size to 1.5 times original
+      img.style.transform = "scale(1.5)";
+      // Animation effect
+      img.style.transition = "transform 0.25s ease";
+    }
+    // Function to reset image size
+    function resetImg() {
+      // Set image size to original
+      img.style.transform = "scale(1)";
+      img.style.transition = "transform 0.25s ease";
+    }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
