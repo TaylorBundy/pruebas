@@ -40,3 +40,13 @@ function nextSlide(){
 document.querySelector('.next').addEventListener('click', e => {
     nextSlide();
 });
+
+var arr = [];
+function myFunction() {
+  var anchors = document.getElementsByTagName("img");
+  for(var i = 0; i < anchors.length; i++){
+   arr.push(anchors[i].text);
+  }
+}
+
+console.log(arr);
