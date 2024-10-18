@@ -45,7 +45,7 @@ const buttons = document.getElementsByTagName("button");
 const result = document.getElementById("result");
 
 const buttonPressed = e => { 
-  result.innerHTML = `ID of <em>${e.target.innerHTML}</em> is <strong>${e.target.id}</strong>`;
+  result.innerHTML = 'ID of <em>${e.target.innerHTML}</em> is <strong>${e.target.id}</strong>';
 }
 
 for (let button of buttons) {
