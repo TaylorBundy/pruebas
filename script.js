@@ -40,24 +40,3 @@ function nextSlide(){
 document.querySelector('.next').addEventListener('click', e => {
     nextSlide();
 });
-
-const buttons = document.getElementsByTagName("button");
-const result = document.getElementById("result");
-
-const buttonPressed = e => { 
-    result.innerHTML = `ID of <em>${e.target.innerHTML}</em> is <strong>${e.target.id}</strong>`;
-  }
-
-for (let button of buttons) {
-  button.addEventListener("click", buttonPressed);
-}
-
-//var arr = [];
-//function myFunction() {
-  //var anchors = document.getElementsByTagName("img");
-  //for(var i = 0; i < anchors.length; i++){
-   //arr.push(anchors[i].text);
-  //}
-//}
-
-//console.log(arr);

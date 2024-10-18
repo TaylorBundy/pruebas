@@ -34,59 +34,19 @@
   <button class="next">Next</button>
   <button onclick="resetImg()">Reset</button>
 
-  <div id="button-group">
-    <button id="button-1">Button 1</button>
-    <button id="button-2">Button 2</button>
-    <button id="button-3">Button 3</button>
-    <button id="button-4">Button 4</button>
-    <button id="button-5">Button 5</button>
-  </div>
-  
-  <div id="result"></div>
-
-  <button id="1" onClick="reply_click(this.id)">B1</button>
-  <button id="2" onClick="reply_click(this.id)">B2</button>
-  <button id="3" onClick="reply_click(this.id)">B3</button>
-    
-<script type="text/javascript">
-  function reply_click(clicked_id)
-  {
-      alert(clicked_id);
-  }
-</script>
-
   <script>
-    //let divs = document.querySelectorAll('div');
-    let divs = document.querySelectorAll('img');
-    let arr = [];
     // Get the img object using its Id
     //img = document.getElementById("img1");
     
-    //img = document.getElementsByTagName("img");
-    //for(var i = 0; i < img.length; i++){
-
-    //arr.push(anchors[i].text);
-    //}
-    for (let i = 0; i < divs.length; i++) {
-      //arr.push(divs[i].innerHTML);
-      arr.push(divs[i].id);
-    }
-
-    console.log(arr);
-    //img = document.getElementById(arr);
-    
-    /*img = document.querySelector('#${id}');*/
     // Function to increase image size
     function enlargeImg(clicked) {
+      // Definimos el ID del elemento presionado
       img = document.getElementById(clicked);
       // Set image size to 1.5 times original
       img.style.transform = "scale(1.5)";
       // Animation effect
       img.style.transition = "transform 0.25s ease";
-      console.log(clicked);
-      //$('img').each(function(index, element) {
-        //console.log('índice elemento '+index+' '+$(element).text());
-      //});
+      console.log(clicked);      
     }
     // Function to reset image size
     function resetImg() {
