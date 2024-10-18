@@ -35,8 +35,20 @@
   <button onclick="resetImg()">Reset</button>
 
   <script>
+    let divs = document.querySelectorAll('div');
+    let arr = [];
     // Get the img object using its Id
     img = document.getElementById("img1");
+    //img = document.getElementsByTagName("img");
+    //for(var i = 0; i < img.length; i++){
+
+    //arr.push(anchors[i].text);
+    //}
+    for (let i = 0; i < divs.length; i++) {
+      arr.push(divs[i].innerHTML);
+    }
+
+    console.log(arr);
     
     /*img = document.querySelector('#${id}');*/
     // Function to increase image size
@@ -45,9 +57,9 @@
       img.style.transform = "scale(1.5)";
       // Animation effect
       img.style.transition = "transform 0.25s ease";
-      $('img').each(function(index, element) {
-        console.log('índice elemento '+index+' '+$(element).text());
-      });
+      //$('img').each(function(index, element) {
+        //console.log('índice elemento '+index+' '+$(element).text());
+      //});
     }
     // Function to reset image size
     function resetImg() {
