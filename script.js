@@ -12,7 +12,7 @@ var swiper = new Swiper(".MySwiper", {
     }
 });
 
-const slides = document.querySelectorAll('.swiper-slide');
+const slides = document.querySelectorAll('.slide');
 let index = 0;
 
 function prevSlide(){
