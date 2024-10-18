@@ -1,3 +1,5 @@
+import Swiper from 'swiper';
+
 var swiper = new Swiper(".MySwiper", {
     slidesPerView: 1,
     spaceBetween: 30,
