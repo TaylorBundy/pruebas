@@ -60,7 +60,8 @@
     let divs = document.querySelectorAll('img');
     let arr = [];
     // Get the img object using its Id
-    img = document.getElementById("img1");
+    //img = document.getElementById("img1");
+    
     //img = document.getElementsByTagName("img");
     //for(var i = 0; i < img.length; i++){
 
@@ -77,6 +78,7 @@
     /*img = document.querySelector('#${id}');*/
     // Function to increase image size
     function enlargeImg(clicked) {
+      img = document.getElementById(clicked);
       // Set image size to 1.5 times original
       img.style.transform = "scale(1.5)";
       // Animation effect
