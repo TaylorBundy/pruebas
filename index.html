@@ -13,7 +13,7 @@
   <div class="swiper MySwiper">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
-        <img src="Imagenes/1.jpg" onclick="enlargeImg()" id="img1">                
+        <img src="Imagenes/1.jpg" onclick="enlargeImg(this.id)" id="img1">                
       </div>
       <div class="swiper-slide">
         <img src="Imagenes/2.jpg" onclick="enlargeImg()" id="img2">      
@@ -76,11 +76,12 @@
     
     /*img = document.querySelector('#${id}');*/
     // Function to increase image size
-    function enlargeImg() {
+    function enlargeImg(clicked) {
       // Set image size to 1.5 times original
       img.style.transform = "scale(1.5)";
       // Animation effect
       img.style.transition = "transform 0.25s ease";
+      console.log(clicked);
       //$('img').each(function(index, element) {
         //console.log('índice elemento '+index+' '+$(element).text());
       //});
