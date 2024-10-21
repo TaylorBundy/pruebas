@@ -15,93 +15,35 @@ body {
     align-items:center;
 }
 
-/* * {
-    box-sizing: border-box;
-} */
-
-/* div {
-    position: sticky;
-    top: 0;
-    padding: 10px;
-    padding: 100px 0;
-} */
-
 .swiper-wrapper {
-    
-    /* z-index: 5; */    
-    width: 1300px;
-    /* width: 100%; */
-    height: 450px;
-    padding: 20px 0;
-    /* position: sticky;
-    display: flex; */
-    /* overflow: hidden;
-    backface-visibility: hidden; */
-        
-    /* position: sticky; */
-    /* position: static; */
-    /* top: 10;
-    left: 10;
-    float: left; */
-    /* float: right; */
-}
-
-
-
-.swiper-slide {
-    /* width: 100px; */
-    /* float: left; */
-    /* position: relative; */
-    /* position: static; */
-    /* position: relative; */
-    /* backface-visibility: hidden;
-    overflow: hidden; */
-    text-align: center;
-    /* display: flex; */
+    position: relative;
+    height: 100vh;
+  }
+  
+  .swiper-slide {
+    position: absolute;
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.145));
-}
+    font-size: 5rem;
+  }
+  
+  .prev {
+    position: fixed;
+    top: 50%;
+  }
+  
+  .next {
+    position: fixed;
+    top: 50%;
+    right: 5px;
+    z-index: 10;
+  }
 
-.swiper-slide img {
-    z-index: 1;
-    display: block;
-    width: 100%;
-    height: 100%;
-    /* width: fit-content;
-    height: fit-content; */
-    border-radius: 8px;
-    transform-origin: left;        
-}
-
-.swiper-slide::selection img {
-opacity: 0;
-}
-
-/* .swiper-slide img:increment {
-    border-radius: 8px;
-    width: fit-content;
-    height: fit-content;
-    transform-origin: left;
-} */
-
-@media(max-width:991px) {
-    body {
-        padding: 100px;
-    }
-}
-
-/* @media (hover: hover) {
-    .swiper-slide {
-      opacity: 0;
-    }
-    main:hover .swiper-slide {
-      opacity: 1;
-    }
-  } */
-
-.ContenedorBoton {
+  .ContenedorBoton {
     /* z-index: 4; */
     /* top: 50px; */
     width: 1300px;
@@ -199,23 +141,3 @@ button:hover span {
 button:active {
     transform: scale(0.9);
 }
-
-/*#slider { 
-    position: relative;
-    width: 300px; 
-    margin: 20px auto;
-}
-.slide {
-    position: absolute;
-    width: 300px;
-    left: 0px;
-    top: 0px;
-    animation-name:fading;
-    animation-duration: 1.5s;
-    animation-iteration-count: infinite;
-}
-@keyframes fading {
-    0% { opacity: 0; }
-    50% { opacity: 1; }
-    100% { opacity: 0; }
-}*/

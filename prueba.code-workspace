@@ -29,6 +29,29 @@
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "htdocs"
+		"liveServer.settings.multiRootWorkspaceName": "htdocs",
+		"auto-close-tag.activationOnLanguage": [
+			"HTML",
+			"HTML5",
+			"xml",
+			"php",
+			"blade",
+			"ejs",
+			"jinja",
+			"javascript",
+			"javascriptreact",
+			"typescript",
+			"typescriptreact",
+			"plaintext",
+			"markdown",
+			"vue",
+			"liquid",
+			"erb",
+			"lang-cfml",
+			"cfml",
+			"HTML (EEx)",
+			"HTML (Eex)",
+			"plist"
+		]
 	}
 }

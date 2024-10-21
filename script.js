@@ -1,6 +1,7 @@
 //import Swiper from 'swiper';
+//import 'swiper/swiper-bundle.min.css';
 
-var swiper = new Swiper(".MySwiper", {
+const swiper = new Swiper(".MySwiper", {
     slidesPerView: 1,
     spaceBetween: 30,
     grabCursor: true,
@@ -14,6 +15,8 @@ var swiper = new Swiper(".MySwiper", {
 
 const slides = document.querySelectorAll('.slide');
 let index = 0;
+//const next = document.querySelector(".next");
+//const prev = document.querySelector(".prev");
 
 function prevSlide(){
     slides[index].classList.remove('active');
@@ -42,3 +45,25 @@ function nextSlide(){
 document.querySelector('.next').addEventListener('click', e => {
     nextSlide();
 });
+
+/* //button events
+next.addEventListener('click', e =>{
+    nextSlide();
+    if(auto){
+    clearInterval(slideInterval)
+    slideInterval = setInterval(nextslide, invervalTime);
+}
+}); */
+
+/* prev.addEventListener('click', e =>{
+    prevSlide();
+    if(auto){
+    clearInterval(slideInterval)
+    slideInterval = setInterval(nextslide, invervalTime);
+}
+}); */
+
+//autoplay
+/* if(auto){
+    slideInterval = setInterval(nextslide, invervalTime);
+} */
